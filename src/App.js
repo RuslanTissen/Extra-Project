@@ -2,14 +2,25 @@ import './App.css';
 
 
 function App() {
-  'use strict'
-
-  function myFn (){
-    a = true
-    console.log(a);
+const newPost =(post, addedAt = Date())=>{
+  const c = {
+    ...post,
+    addedAt
   }
-  myFn()
-  console.log(a);
+  return c
+}
+
+const firstPost = {
+  id:1,
+  author:"Ruslan",
+}
+newPost(firstPost)
+console.log(newPost);
+
+
+
+
+
 
   return (
     <div className="App">
