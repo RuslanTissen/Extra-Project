@@ -1,15 +1,31 @@
-nav{
-   
-    a[href="/*"]{
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Lato:ital,wght@0,400;1,100;1,300&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    nav{
+        height: 75px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: gray;
-        #logo{
-            height: 100px;
-            width: 100px;
+        justify-content: space-around;
+        background-color: rgb(195,230,234);
+        padding: 0 min(500px, 15%) ;
+        a[href="/*"]{
+            #logo{
+                box-sizing: border-box;
+                height: 100%;
+            }
+        }
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-family: 'Barlow', sans-serif;
+            font-size: 2rem;
+            letter-spacing: -.5px;
         }
     }
-    
 }
