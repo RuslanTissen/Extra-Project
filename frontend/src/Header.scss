@@ -1,8 +1,15 @@
 nav{
-    display: flex;
-    justify-content: center;
-    #logo{
-        height: 100px;
-        width: 100px;
+   
+    a[href="/*"]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: gray;
+        #logo{
+            height: 100px;
+            width: 100px;
+        }
     }
+    
 }
