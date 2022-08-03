@@ -4,17 +4,9 @@ import Logo from "./components/Logo.png"
 
 
 export default function Header(){
-    const fnWithError = ()=> {
-        throw new Error('Some Error')            
-    }
-    try {
-        fnWithError()        
-    } catch (error) {
-        console.error(error)
-        console.log(error.message);
-    }
-
-    console.log('Continue...');
+    function myFn(a,b){return a+b}
+    // const a = myFn(2,3)
+    console.log(myFn(2,3));
 
     return(
         <header>
