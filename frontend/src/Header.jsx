@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
 import Logo from "./components/Logo.png";
+// import Videos from "./Routes/Videos.jsx";
+
+const setActive = ({isActive}) => isActive ?'active-link' : ''
 
 export default function Header() {
   const userProfile = {
@@ -9,21 +12,18 @@ export default function Header() {
     hasSignedAgreement: true
   }
 
-//   const {name, age} = userProfile
-// const {hasSignedAgreement} = userProfile
+  const {name, age} = userProfile
+const {hasSignedAgreement} = userProfile
 
-console.log(userProfile.name);
+console.log(name, age);
 
   return (
     <header>
       <nav>
-        <NavLink to="*">
-          {/* <span className="logoNav">Ruslan's LOGO</span> */}
-          <img src={Logo} id="logo" />
-        </NavLink>
-        <NavLink to="Videos">Videos</NavLink>
-        <NavLink to="Forum">Forums</NavLink>
-        <NavLink to="Project">Project</NavLink>
+        <NavLink to="*" className={setActive}><img src={Logo} id="logo" /></NavLink>
+        <NavLink to="Videos" className={setActive}>Videos</NavLink>
+        <NavLink to="Forum" className={setActive}>Forums</NavLink>
+        <NavLink to="Project" className={setActive}>Project</NavLink>
       </nav>
     </header>
   );
