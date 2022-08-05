@@ -6,16 +6,12 @@ import Logo from "./components/Logo.png";
 const setActive = ({isActive}) => isActive ?'active-link' : ''
 
 export default function Header() {
-  const userProfile = {
-    name : "Ruslan",
-    age: 48,
-    hasSignedAgreement: true
-  }
+  const fruits = ['apple', 'Banana'] 
+  const [fruitOne, fruitTwo] = fruits
+  
+  console.log(fruitOne);
+  console.log(fruitTwo);
 
-  const {name, age} = userProfile
-const {hasSignedAgreement} = userProfile
-
-console.log(name, age);
 
   return (
     <header>
