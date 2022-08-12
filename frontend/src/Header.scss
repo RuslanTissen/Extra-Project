@@ -11,15 +11,15 @@ body{
 }
 header{
     nav{
-        height: 75px;
+        height: 45px;
         display: flex;
         justify-content: space-around;
         background-color: rgb(195,230,234);
         padding: 0 min(500px, 15%) ;
         .active-link{
-
+            color: blue;
         }
-        a[href="/*"]{
+        a[href="/"]{
             #logo{
                 box-sizing: border-box;
                 height: 100%;

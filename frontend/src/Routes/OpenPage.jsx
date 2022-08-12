@@ -5,7 +5,7 @@ export default function OpenPage(){
 
     return(
         <section>
-            Open Page
+            <h1>Open Page</h1>
         </section>
     )
 }
